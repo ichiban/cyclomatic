@@ -8,7 +8,7 @@ func main() { // want main:`complexity\(1\)`
 	tooManyBinaryOps()
 }
 
-func tooManyIfs() { // want `cyclomatic complexity of a\.tooManyIfs exceeded limit 11 > 10` tooManyIfs:`complexity\(11\)`
+func tooManyIfs() { // want `cyclomatic complexity of tooManyIfs exceeded limit 11 > 10` tooManyIfs:`complexity\(11\)`
 	if false {
 	}
 
@@ -40,7 +40,7 @@ func tooManyIfs() { // want `cyclomatic complexity of a\.tooManyIfs exceeded lim
 	}
 }
 
-func tooManyFors() { // want `cyclomatic complexity of a\.tooManyFors exceeded limit 11 > 10` tooManyFors:`complexity\(11\)`
+func tooManyFors() { // want `cyclomatic complexity of tooManyFors exceeded limit 11 > 10` tooManyFors:`complexity\(11\)`
 	for false {
 	}
 
@@ -72,14 +72,14 @@ func tooManyFors() { // want `cyclomatic complexity of a\.tooManyFors exceeded l
 	}
 }
 
-func tooManyCases() { // want `cyclomatic complexity of a\.tooManyCases exceeded limit 11 > 10` tooManyCases:`complexity\(11\)`
+func tooManyCases() { // want `cyclomatic complexity of tooManyCases exceeded limit 11 > 10` tooManyCases:`complexity\(11\)`
 	switch 0 {
 	case 1, 2, 3, 4, 5:
 	case 6, 7, 8, 9, 10:
 	}
 }
 
-func tooManyComms() { // want `cyclomatic complexity of a\.tooManyComms exceeded limit 11 > 10` tooManyComms:`complexity\(11\)`
+func tooManyComms() { // want `cyclomatic complexity of tooManyComms exceeded limit 11 > 10` tooManyComms:`complexity\(11\)`
 	ch := make(chan struct{}, 1)
 	defer close(ch)
 
@@ -99,7 +99,7 @@ func tooManyComms() { // want `cyclomatic complexity of a\.tooManyComms exceeded
 	}
 }
 
-func tooManyBinaryOps() { // want `cyclomatic complexity of a\.tooManyBinaryOps exceeded limit 11 > 10` tooManyBinaryOps:`complexity\(11\)`
+func tooManyBinaryOps() { // want `cyclomatic complexity of tooManyBinaryOps exceeded limit 11 > 10` tooManyBinaryOps:`complexity\(11\)`
 	if true && true && true && true && true || true && true && true && true && true {
 	}
 }
